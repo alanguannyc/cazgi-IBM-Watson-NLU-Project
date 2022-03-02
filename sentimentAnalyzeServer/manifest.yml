@@ -1,8 +1,10 @@
 ---
 applications:
-- path: .
-  name: sentiment-analyzer-9e5aa2f1aa5642bb80171f8b7a71cea1 #change to be unique in IBM Cloud
-  buildbackpack: nodejs_buildpack
-  memory: 256M
-  instances: 1
-  random-route: true
+  - path: .
+    name: sentiment-analyzer-1121 #change to be unique in IBM Cloud
+    buildpack: nodejs_buildpack
+    memory: 256M
+    instances: 1
+    random-route: true
+    env:
+      NODE_MODULES_CACHE: false
